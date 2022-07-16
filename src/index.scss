@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+//Variables
+$purple: #8d53ff;
+$pink: #ca6be6;
+$white: #f8f8f8;
+$dark: #1f1f1f;
+$red: #ff6057;
+$yellow: #ffbd2e;
+$green: #27c93f;
+$lightgray: #c9c9c9;
+
+$transition: all 250ms ease;
+
+.shadowed {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+//App Stying
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1.5vh;
+  width: 100%;
+  height: 100%;
+  color: $dark;
+  background-color: $white;
+  box-sizing: border-box;
+}
+
+li {
+  color: $dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+//Navbar Styling
+
+nav {
+  transition: $transition;
+}
+
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+li {
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: $transition;
+  }
+}
+
+// Home Styling
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  @media only screen and (min-width: 940px) {
+    font-size: 3rem;
+    text-align: left;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  @media only screen and (min-width: 940px) {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+.hand {
+  animation-name: wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+a {
+  color: $dark;
+  transition: color 200ms ease;
+}
+
+a:hover {
+  color: $lightgray;
+  transition: color 200ms ease;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+//About us Styling
+
+.pink {
+  color: $pink;
+}
+
+.green {
+  color: $green;
+}
+
+.skills {
+  columns: 1;
+  @media only screen and (min-width: 940px) {
+    columns: 2;
+  }
+
+  li {
+    margin: 0;
+    line-height: 1.75;
+  }
+}
+
+//Layout Styling
+
+footer {
+  color: $dark;
+}
+
+// .dark {
+//   background-color: $dark;
+//   color: $white;
+//   transition: all 400ms;
+
+//   a,
+//   i,
+//   li {
+//     color: $white;
+//     transition: color 400ms;
+//   }
+
+//   a:visited {
+//     color: $white;
+//   }
+
+//   footer {
+//     color: $white;
+//   }
+// }
+
+// .light {
+//   background-color: $white;
+//   color: $dark;
+//   transition: all 400ms;
+// }
+
+.light {
+  background-color: $white;
+  color: $dark;
+  transition: all 400ms;
+  a,
+  i,
+  li {
+    color: $dark;
+    transition: color 400ms;
+  }
+  #link {
+    color: $white;
+  }
+  a:visited {
+    color: $dark;
+  }
+  i:hover {
+    color: $purple;
+  }
+  footer {
+    color: $dark;
+  }
+
+  nav {
+    background-color: $white;
+    transition: $transition;
+  }
+
+  div > section > div:first-child {
+    background-color: #575e64;
+    i:first-child {
+      color: $red;
+    }
+    i:nth-child(2) {
+      color: $yellow;
+    }
+    i:nth-child(3) {
+      color: $green;
+    }
+  }
+
+  & > div div {
+    i {
+      color: black;
+    }
+  }
+}
+
+.dark {
+  background-color: $dark;
+  color: $white;
+  transition: all 400ms;
+  a,
+  i,
+  li {
+    color: $white;
+    transition: color 400ms;
+  }
+  a:visited {
+    color: $white;
+  }
+  i:hover {
+    color: $purple;
+  }
+  footer {
+    color: $white;
+  }
+
+  nav {
+    background-color: $dark;
+    transition: $transition;
+  }
+
+  div > section > div:first-child {
+    background-color: #575e64;
+    i:first-child {
+      color: $red;
+    }
+    i:nth-child(2) {
+      color: $yellow;
+    }
+    i:nth-child(3) {
+      color: $green;
+    }
+  }
+
+  & > div div {
+    i {
+      color: white;
+    }
+  }
+}
+
+//Terminal Styling
+i {
+  padding-left: 0.5rem;
+
+  &.red {
+    color: $red;
+  }
+
+  &.amber {
+    color: $yellow;
+  }
+
+  &.green {
+    color: $green;
+  }
+}
+
+.terminal {
+  p,
+  li {
+    margin: 1rem 0;
+    color: $white;
+  }
+
+  a,
+  a:visited {
+    animation: changeColors 3s infinite;
+    font-weight: bold;
+  }
+}
+
+@keyframes changeColors {
+  0% {
+    color: #00a47f;
+  }
+  33.3% {
+    color: #1d91e3;
+  }
+  66.6% {
+    color: #d419fe;
+  }
+  100% {
+    color: #00a47f;
+  }
+}
