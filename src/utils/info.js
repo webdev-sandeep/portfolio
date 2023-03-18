@@ -1,8 +1,8 @@
 import self from "./images/sandeep.png";
-import projectArrow from "./images/project-arrow.png";
+import projectTokenTrends from "./images/project-tokentrends.png";
 import projectCocktail from "./images/project-cocktail.png";
 import projectDriftmusic from "./images/project-driftmusic.png";
-import projectTour from "./images/project-tour.png";
+import projectPortfolio from "./images/project-portfolio.png";
 import projectAskmovies from "./images/project-askmovies.png";
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
@@ -46,10 +46,10 @@ export const info = {
       link: "https://twitter.com/webdev_sandeep",
       icon: "fa fa-twitter",
     },
-    {
-      link: "https://www.reddit.com/user/webdev-sandeep",
-      icon: "fa fa-reddit",
-    },
+    // {
+    //   link: "https://www.reddit.com/user/webdev-sandeep",
+    //   icon: "fa fa-reddit",
+    // },
   ],
   bio: "Hello! I'm Sandeep. I'm very ambitious full-stack developer looking for a role in established IT company with the opportunity to work with the latest technologies on challenging and diverse projects. I'm quietly confident, naturally curious, and perpetually working on improving my skills. You should hire me!",
   skills: {
@@ -61,11 +61,10 @@ export const info = {
       "bootstrap",
       "html5",
       "css3",
-      "mongodb",
       "nodejs",
-      "expressjs",
+      "tailwindcss",
     ],
-    exposedTo: ["vuejs", "tailwindcss", "firebase"],
+    exposedTo: ["vuejs", "firebase"],
   },
   hobbies: [
     {
@@ -87,10 +86,10 @@ export const info = {
   ],
   portfolio: [
     {
-      title: "Project Arrow",
-      live: "https://arrowsolutions.netlify.app",
-      source: "https://github.com/webdev-sandeep/arrow",
-      image: projectArrow,
+      title: "Project TokenTrends",
+      live: "https://tokentrends.netlify.app/",
+      source: "https://github.com/webdev-sandeep/tokentrends",
+      image: projectTokenTrends,
     },
     {
       title: "Project Cocktails",
@@ -105,10 +104,10 @@ export const info = {
       image: projectDriftmusic,
     },
     {
-      title: "Project Tours",
-      live: "https://tourhub.netlify.app",
-      source: "https://github.com/webdev-sandeep/india-tours-server",
-      image: projectTour,
+      title: "Project Portfolio",
+      live: "https://webdev-sandeep-portfolio.netlify.app",
+      source: "https://github.com/webdev-sandeep/portfolio",
+      image: projectPortfolio,
     },
     {
       title: "Project AskMovies",

@@ -22,6 +22,7 @@ const Home = () => {
         className="avatar shadowed"
         style={{
           background: info.gradient,
+          objectFit: "cover",
         }}
         component={"img"}
         src={sandeep}
@@ -69,7 +70,7 @@ const Home = () => {
         <Box
           display={"flex"}
           gap={"1.5rem"}
-          justifyContent={"center"}
+          justifyContent={"start"}
           fontSize={{
             xs: "2rem",
             md: "2.5rem",
