@@ -4,6 +4,7 @@ import projectCocktail from "./images/project-cocktail.png";
 import projectDriftmusic from "./images/project-driftmusic.png";
 import projectPortfolio from "./images/project-portfolio.png";
 import projectAskmovies from "./images/project-askmovies.png";
+import projectChitChat from "./images/project-chitchat.png";
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 
@@ -85,6 +86,12 @@ export const info = {
     },
   ],
   portfolio: [
+    {
+      title: "Project ChitChat",
+      live: "https://the-chitchat-app.netlify.app/",
+      source: "https://github.com/webdev-sandeep/chitchat",
+      image: projectChitChat,
+    },
     {
       title: "Project TokenTrends",
       live: "https://tokentrends.netlify.app/",
